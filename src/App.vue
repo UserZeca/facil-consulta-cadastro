@@ -1,6 +1,8 @@
 <template>
      <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="max-width: 60%;">
-        <SobreProfissional />
+        <SobreProfissional v-if="page == 1" />
+        <SobreAtendimento v-else-if="page == 2" />
+      
       
       <!--
       <CardBody src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663257/desktop-pagina-1_1_dvtzjh.png" backgroundColor=""/>
@@ -14,12 +16,23 @@
 
 //import CardBody from './components/CardBody.vue'
   import SobreProfissional from './pages/SobreProfissional.vue'
+import SobreAtendimento from './pages/SobreAtendimento.vue'
   export default {
     name: 'App',
     components: {
-      SobreProfissional
-    
-    },
+    SobreProfissional,
+    SobreAtendimento
+},
+    data(){
+
+      return {
+
+        page: 2 
+
+
+      }
+
+    }
 
 
   
