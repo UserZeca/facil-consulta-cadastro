@@ -1,17 +1,27 @@
 <template>
-  
-  <CardBody src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663257/desktop-pagina-1_1_dvtzjh.png" backgroundColor=""/>
+     <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="max-width: 60%;">
+        <SobreProfissional />
+      
+      <!--
+      <CardBody src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663257/desktop-pagina-1_1_dvtzjh.png" backgroundColor=""/>
+      -->
 
+    </div>
+  
 </template>
 
 <script>
-import CardBody from './components/CardBody.vue'
 
-export default {
-  name: 'App',
-  components: {
-    CardBody
-  },
+//import CardBody from './components/CardBody.vue'
+  import SobreProfissional from './pages/SobreProfissional.vue'
+  export default {
+    name: 'App',
+    components: {
+      SobreProfissional
+    
+    },
+
+
   
 }
 </script>
