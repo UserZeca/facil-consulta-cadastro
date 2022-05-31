@@ -2,6 +2,7 @@
      <div class="card shadow-lg p-3 mb-5 bg-body rounded" style="max-width: 60%;">
         <SobreProfissional v-if="page == 1" />
         <SobreAtendimento v-else-if="page == 2" />
+        <RevisaoCadastro v-else-if="page == 3" />
       
       
       <!--
@@ -16,18 +17,20 @@
 
 //import CardBody from './components/CardBody.vue'
   import SobreProfissional from './pages/SobreProfissional.vue'
-import SobreAtendimento from './pages/SobreAtendimento.vue'
+  import SobreAtendimento from './pages/SobreAtendimento.vue'
+  import RevisaoCadastro from './pages/RevisaoCadastro.vue'
   export default {
     name: 'App',
     components: {
-    SobreProfissional,
-    SobreAtendimento
-},
+      SobreProfissional,
+      SobreAtendimento,
+      RevisaoCadastro
+    },
     data(){
 
       return {
 
-        page: 2 
+        page: 3 
 
 
       }
@@ -53,4 +56,5 @@ import SobreAtendimento from './pages/SobreAtendimento.vue'
   align-items: center;
   height: 100vh;
 }
+
 </style>

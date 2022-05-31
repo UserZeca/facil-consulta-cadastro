@@ -15,7 +15,7 @@
     export default {
         name: 'SelectOption',
         props: {
-            items: Object
+            items: Array
         },
     }
 </script>

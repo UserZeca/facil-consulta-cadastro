@@ -20,43 +20,33 @@
                     <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-text">.00</span>
                 </div>
+                
+            
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                </div>
 
-                        
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <div class="btn">    
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"/>
-                                <label class="form-check-label" for="flexCheckDefault">Accordion Item #1</label>
-                            </div>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                            Default radio
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                            Default checked radio
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-              
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                    </label>
+                </div>
 
+                <StretchedInput :radioOptions="items" name="opcoesdepagamento"/>
+
+               
                 <div class="mb-3 row">
                     
                     <div class="col-10"> 
-                    <ProgressBar status="100" min="0" max="100"/>
+                        <ProgressBar status="100" min="0" max="100"/>
                     </div> 
                     
                     <div class="col-2">
-                    <h5>1 de 2</h5>
+                        <h5>1 de 2</h5>
                     </div>
 
                 </div>
@@ -82,14 +72,17 @@
 
     import SelectOption from '@/components/SelectOption.vue'
     import ProgressBar from '@/components/ProgressBar.vue'
+    import StretchedInput from '@/components/StretchedInput.vue'
+    import ProgressButton from '@/components/ProgressButton.vue'
 
     export default {
 
         name: 'SobreAtendimento',
         components: {
             SelectOption,
-            ProgressBar
-
+            ProgressBar,
+            StretchedInput,
+            ProgressButton
         },
 
         data() {
@@ -98,7 +91,8 @@
 
                 items: [
                     {option: 'Chiclete'},
-                    {option: 'Pipoca'}
+                    {option: 'Pipoca'},
+                    {option: 'Feijão Tropeiro'}
 
                 ]
 
