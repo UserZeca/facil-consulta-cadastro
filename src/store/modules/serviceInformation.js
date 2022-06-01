@@ -1,16 +1,22 @@
 const serviceInformation = {
 
     state: () => {
+
+      return {
         serviceDetails: {
-            mainspecialty: '';
-            price: '';
-            paymentMethods: {
-                pix: false;
-                money: false;
-                creditCard: false
-            }
-        }
-        
+          mainspecialty: '',
+          price: '',
+          paymentMethods: {
+              pix: false,
+              money: false,
+              creditCard: false
+          }
+      }
+
+
+      }
+
+     /*          */ 
     },
   
     mutations: {

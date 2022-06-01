@@ -1,7 +1,7 @@
+/* eslint-disable */
 import { createStore } from 'vuex'
-import serviceInformation from './modules/serviceInformation';
 import professionalInformation from './modules/professionalInformation';
-
+import serviceInformation from './modules/serviceInformation';
 
 
 
@@ -10,8 +10,9 @@ export default createStore({
 
   modules: {
 
-    serviceInformation,
-    professionalInformation
+    professionalInformation,
+    serviceInformation
 
   }
+    
 })

@@ -10,16 +10,16 @@
             -->
             <form>
               <div class="mb-3">
-                <InputForms type="email" for="a" labelContent="TESTE" placeHolder="ASJhdjshdshdjh"/>
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <InputForms type="text" for="a" labelContent="asdsads" placeHolder="ASJhdjshdshdjh"/>
+                <div id="emailHelp" class="form-text">{{getProfessional()}} We'll never share your email with anyone else.</div>
               </div>
 
               <div class="mb-3">
-                <InputForms type="email" for="a" labelContent="TESTE" placeHolder="ASJhdjshdshdjh"/>                
+                <InputForms type="text" for="a" labelContent="TESTE" placeHolder="ASJhdjshdshdjh"/>                
               </div>
 
               <div class="mb-3">
-                <InputForms type="email" for="a" labelContent="TESTE" placeHolder="ASJhdjshdshdjh"/>
+                <InputForms type="text" for="a" labelContent="TESTE" placeHolder="ASJhdjshdshdjh"/>
               </div>
               
               <div class="mb-3 row">
@@ -56,7 +56,7 @@
         <div class="col-md-6 ">
           <img src="https://res.cloudinary.com/dyie6o63u/image/upload/v1653663257/desktop-pagina-1_1_dvtzjh.png" class="img-fluid rounded-start " alt="...">
         </div>
-
+      
     </div>
 
 </template>
@@ -67,10 +67,27 @@
     import InputForms from '../components/InputForms.vue';
     import ProgressBar from '../components/ProgressBar.vue';
     import ProgressButton from '../components/ProgressButton.vue';
-
+    //import store from '@/store';
+    import {mapState} from 'vuex';
+    
+    
+     
 
     export default {
         name: 'SobreProfissional',
+        computed: {
+
+          ...mapState([
+            'professional',
+            'serviceDetails'
+          ]),
+
+          getProfessional(){
+
+            return this.$store.state.professional;
+          }
+
+        },
         components: {
             SelectOption,
             InputForms,
@@ -85,6 +102,8 @@
                 { option: "Pizza" },
                 { option: "Outro" }
             ],
+
+            
 
         };
     },

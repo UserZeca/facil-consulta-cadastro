@@ -29,10 +29,7 @@
     data(){
 
       return {
-
-        page: 3 
-
-
+        page: 1 
       }
 
     }

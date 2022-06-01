@@ -1,21 +1,28 @@
+
 const professionalInformation = {
   
     state: () => {
-        professional: {
-            name: '';
-            cpf: '';
-            phone: '';
+      
+        return {
+          professional: {
+            name: '',
+            cpf: '',
+            phone: '',
             location: {
-                state: '';
-                city: '';
+              state: '',
+              city: ''
             }
+          }
         }
-
+      /*  
+    
+        }
+      */
     },
   
     mutations: {
+      
   
-
     },
   
     actions: {
