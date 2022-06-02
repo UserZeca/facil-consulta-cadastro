@@ -18,23 +18,10 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Para rodar o projeto, utilize o comando a seguir na pasta raíz do projeto, e em seguida abrar no seu navegador o endereço correspondente que irá ser indicado pelo Vue CLI na linha de comando.
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Extenções
 
