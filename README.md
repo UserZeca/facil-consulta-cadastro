@@ -9,7 +9,7 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
 
 # Status do Projeto
   
-  Em construção 
+  Em construção 🚧
 
 ## Como rodar o projeto 
 
