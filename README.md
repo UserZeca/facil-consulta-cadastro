@@ -16,6 +16,7 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
 - Por algum motivo o Vue não está reconhecendo o Vuex, mesmo colocando o modúlo para ser utilizado globalmente (com .use no mount da aplicação). O erro retornado é que  $store não foi declarada.
 - O design do projeto ainda não foi todo concluído
 - Melhorar a documentação ao final do projeto 
+- Vale a pena restruturar com o Nuxt?
 
 ## Como rodar o projeto 
 
