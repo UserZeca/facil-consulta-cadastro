@@ -1,4 +1,4 @@
-# Fácil Consulta - [🚀Cadastro]
+# Fácil Consulta - [👩‍⚕Cadastro]
 
 ##### *Recomenda-se para uma maior compreensão, visualizar esse arquivo em algum visualizador de arquivos markdown. Extenções do Visual Studio Code como a Markdown Preview Github Styling (Link no final do arquivo) permitem isso.
 
@@ -35,3 +35,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Extenções
+
+[GraphQL](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
+
+[Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) 
+
+### Autor
+
+@Ezequias Kluyvert de Oliveira Lemos
