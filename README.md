@@ -19,7 +19,6 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
 
 ## Como rodar o projeto 
 
-## Project setup
 ```
 npm install
 ```
