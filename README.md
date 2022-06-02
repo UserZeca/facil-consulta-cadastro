@@ -6,10 +6,16 @@
 
 O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que desejam oferece seus serviços para eventuais consultas.
 
-
 ## Status do Projeto
   
   Em construção 🚧
+
+### Pontos importantes (dúvidas/problemas/obsevações)
+
+- Bootstrap Vue, aparentemente não tem suporte oficial para a versão 3.0 do Vue js. 
+- Por algum motivo o Vue não está reconhecendo o Vuex, mesmo colocando o modúlo para ser utilizado globalmente (com .use no mount da aplicação). O erro retornado é que  $store não foi declarada.
+- O design do projeto ainda não foi todo concluído
+- Melhorar a documentação ao final do projeto 
 
 ## Como rodar o projeto 
 
@@ -18,7 +24,7 @@ O projeto refere-se à um Sistema de Cadastro para profisionais da saúde que de
 npm install
 ```
 
-### Para rodar o projeto, utilize o comando a seguir na pasta raíz do projeto, e em seguida abrar no seu navegador o endereço correspondente que irá ser indicado pelo Vue CLI na linha de comando.
+##### Para rodar o projeto, utilize o comando a seguir na pasta raíz do projeto, e em seguida abrar no seu navegador o endereço correspondente que irá ser indicado pelo Vue CLI na linha de comando.
 ```
 npm run serve
 ```
